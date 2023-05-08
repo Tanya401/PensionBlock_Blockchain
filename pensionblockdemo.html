@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>PensionBlock Manager</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.0/dist/web3.min.js"></script>
+    <script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src = "./app.js"></script>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" >
+        <!-- Icon -->
+        <link rel="stylesheet" href="assets/fonts/line-icons.css">
+        <!-- Slicknav -->
+        <link rel="stylesheet" href="assets/css/slicknav.css">
+        <!-- Owl carousel -->
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/css/owl.theme.css">
+        
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <link rel="stylesheet" href="assets/css/nivo-lightbox.css">
+        <!-- Animate -->
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <!-- Main Style -->
+        <link rel="stylesheet" href="assets/css/main.css">
+        <!-- Responsive Style -->
+        <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- <style>
+        body {
+            background-color: #4A9CEC;
+        }
+    </style> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.0/dist/web3.min.js"></script>
+    <script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="./app.js"></script>
+  </head>
+  <body>
+        <!-- Header Area wrapper Starts -->
+        <header id="header-wrap">
+            <!-- Navbar Start -->
+            <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
+              <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <a href="index.html" class="navbar-brand"><img src="assets/img/logo_new.png" alt=""></a>       
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="lni-menu"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                  <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
+                    <li class="nav-item active">
+                      <a class="nav-link">
+                        Hi,User
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          <!-- Hero Area Start -->
+          <div id="hero-area" class="hero-area-bg">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 col-sm-12">
+                  <div class="contents text-center">
+                    <h2 class="head-title wow fadeInUp">Manage your pension in just one click.
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Hero Area End -->
+          
+          <!-- PensionBlock Demo Start -->
+          <div>
+           <!-- <h1>Pension System</h1> -->
+           <!-- <label for="name" style="color: #000000;">Name: <input type="text" id="name" name="name" style="background-color: #FFFFFF; color: #000000; border: 1px solid #4A9CEC; padding: 5px;"></label>
+  <input type="text" id="name" name="name" style="background-color: #FFFFFF; color: #000000; border: 1px solid #4A9CEC; padding: 5px; margin-left: 600px;">
+  <label for="age" style="color: #000000;">Age: <input type="number" id="age" name="age" style="background-color: #FFFFFF; color: #000000; border: 1px solid #4A9CEC; padding: 5px;"></label>
+
+  <input type="number" id="age" name="age" style="background-color: #FFFFFF; color: #000000; border: 1px solid #4A9CEC; padding: 5px; margin-left: 600px;">
+
+  <button class="btn btn-common2" id="RegisterBtn" type="button" onclick="register()">Register</button>
+  <label for="amount" style="color: #000000;">Withdrawal Amount: <input type="number" id="amount" name="amount" style="background-color: #FFFFFF; color: #000000; border: 1px solid #4A9CEC; padding: 5px;"></label>
+
+  <input type="number" id="amount" name="amount" style="background-color: #FFFFFF; color: #000000; border: 1px solid #4A9CEC; padding: 5px; margin-left: 600px;">
+
+  <button class="btn btn-common2" id="withdrawBtn" type="button" onclick="withdraw()">Withdraw</button> -->
+
+
+  
+
+<label for="name" style="color: cornflowerblue; margin-left: 225px;">Name: <input type="text" id="name" name="name" style="background-color: #FFFFFF; color: #000000; border: 1px solid #4A9CEC; padding: 5px;"></label>
+
+<label for="age" style="color: cornflowerblue; margin-left: 100px;">Age: <input type="number" id="age" name="age" style="background-color: #FFFFFF; color: #000000; border: 1px solid #4A9CEC; padding: 5px;"></label>
+
+<label for="aadharNo" style="color: cornflowerblue; margin-left: 100px;">Aadhar: <input type="number" id="aadharNo" name="aadharNo" style="background-color: #FFFFFF; color: #000000; border: 1px solid #4A9CEC; padding: 5px;"></label>
+
+
+<button class="btn btn-common2" id="RegisterBtn" type="button" onclick="register()">Register</button>
+
+<label for="aadharNo1" style="color: cornflowerblue; margin-left: 530px;">Aadhar: <input type="number" id="aadharNo1" name="aadharNo1" style="background-color: #FFFFFF; color: #000000; border: 1px solid #4A9CEC; padding: 5px;"></label>
+<button class="btn btn-common2" id="SeeBalanceBtn" type="button" onclick="showBalance()">Show Balance</button>
+
+<label for="amount" style="color: cornflowerblue; margin-left: 450px;">Withdrawal Amount: <input type="number" id="amount" name="amount" style="background-color: #FFFFFF; color: #000000; border: 1px solid #4A9CEC; padding: 5px;"></label>
+
+<button class="btn btn-common2" id="withdrawBtn" type="button" onclick="withdraw()">Withdraw</button>
+
+        </div>
+          <!-- PensionBlock Demo End -->
+  </body>
+</html>
