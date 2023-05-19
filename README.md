@@ -22,7 +22,7 @@ These three interactors of the system work together for a smooth flow of funds i
 
 ## Tech stack involved:
 
-Implementation of smart contracts: Solidity, Remix IDE, WEB3.JS
+Implementation of smart contracts: solidity, truffle, Remix IDE, WEB3.JS
 
 User interface: HTML, CSS, JS
 
